@@ -18,12 +18,12 @@ ModelImporter:
     removeConstantScaleCurves: 0
     motionNodeName: 
     animationImportErrors: 
-    animationImportWarnings: 
+    animationImportWarnings: "\nClip 'Take 001' has import animation warnings that might lower retargeting quality:\nNote: Activate translation DOF on avatar to improve retargeting quality.\n\t'Mid_back' is inbetween humanoid transforms and has rotation animation that will be discarded.\n"
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -118,7 +118,227 @@ ModelImporter:
   humanDescription:
     serializedVersion: 3
     human: []
-    skeleton: []
+    skeleton:
+    - name: knightwalkfinal(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube1
+      parentName: knightwalkfinal(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_ankle_control
+      parentName: knightwalkfinal(Clone)
+      position: {x: -0.011331622, y: 0.008446599, z: -0.003923657}
+      rotation: {x: 0.034087338, y: -0.016988387, z: -0.33569014, w: 0.9412022}
+      scale: {x: 0.45302528, y: 1, z: 0.45302528}
+    - name: L_ankle_control
+      parentName: knightwalkfinal(Clone)
+      position: {x: 0.00048948464, y: 0.0058223587, z: 0.0037707395}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__R_ankle_control
+      parentName: L_ankle_control
+      position: {x: 0.009621834, y: 0.0016971898, z: 0.0010773324}
+      rotation: {x: 0.02499004, y: -0.012669696, z: 0.11357974, w: 0.9931338}
+      scale: {x: 0.45302528, y: 1, z: 0.45302528}
+    - name: Root_control
+      parentName: knightwalkfinal(Clone)
+      position: {x: 0.00048948464, y: 0.0377787, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__L_knee_control
+      parentName: Root_control
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__L_ankle_control
+      parentName: pasted__L_knee_control
+      position: {x: -0, y: 0, z: 1.110223e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__R_ankle_control
+      parentName: pasted__pasted__L_ankle_control
+      position: {x: 0.00010820202, y: -0.0005528476, z: -0.000028842125}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__R_ankle_control
+      parentName: pasted__pasted__pasted__R_ankle_control
+      position: {x: -0, y: 0.0047268746, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__R_ankle_control
+      parentName: pasted__pasted__pasted__pasted__R_ankle_control
+      position: {x: -3.330669e-18, y: 0.009084373, z: 1.11022296e-17}
+      rotation: {x: -0.03581483, y: -0.01933283, z: 0.07218004, w: 0.99656093}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_shoulder_control1
+      parentName: pasted__pasted__pasted__pasted__pasted__R_ankle_control
+      position: {x: -0.00048948464, y: 0.004753184, z: -0.0035951931}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_shoulder_control
+      parentName: R_shoulder_control1
+      position: {x: -1.8832282e-17, y: -0.00091086864, z: -0.0042231227}
+      rotation: {x: 0.07076108, y: 0.006232302, z: 0.28062132, w: 0.95718634}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__R_ankle_control
+      parentName: R_shoulder_control
+      position: {x: 1.9473325e-16, y: -0.012917766, z: -0.0003312254}
+      rotation: {x: -0.043072462, y: 0.030452674, z: -0.18446405, w: 0.98142266}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__R_ankle_control
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__pasted__R_ankle_control
+      position: {x: 1.5265567e-17, y: -0.01084765, z: 0.00008280635}
+      rotation: {x: 0, y: -0.07528287, z: -0, w: 0.9971622}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_shoulder_control2
+      parentName: pasted__pasted__pasted__pasted__pasted__R_ankle_control
+      position: {x: -0.00048948464, y: 0.004753146, z: 0.00359519}
+      rotation: {x: 0.0022605546, y: -0.014491527, z: -0.018957581, w: 0.9997127}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__nurbsCircle1
+      parentName: L_shoulder_control2
+      position: {x: 2.6478693e-17, y: -0.00091083045, z: 0.0042231297}
+      rotation: {x: -3.4557623e-10, y: -0.027206063, z: -0.21535817, w: 0.9761561}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__R_ankle_control
+      parentName: pasted__nurbsCircle1
+      position: {x: 7.105551e-18, y: -0.012917766, z: 0.00033122}
+      rotation: {x: 2.5309074e-10, y: -0.04333332, z: -0.34301853, w: 0.93832856}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__R_ankle_control
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__R_ankle_control
+      position: {x: -0, y: -0.010847599, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__R_ankle_control
+      parentName: pasted__pasted__pasted__pasted__pasted__R_ankle_control
+      position: {x: -0.0001746124, y: 0.00759377, z: 0.000052659307}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pasted__pasted__pasted__pasted__pasted__pasted__pasted__R_ankle_control
+      parentName: pasted__pasted__pasted__pasted__pasted__pasted__R_ankle_control
+      position: {x: -0.00038332064, y: 0.002576456, z: 5.551115e-19}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_knee_control1
+      parentName: knightwalkfinal(Clone)
+      position: {x: -0.01146509, y: 0.021049058, z: -0.0037340876}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_knee_control1
+      parentName: knightwalkfinal(Clone)
+      position: {x: -0.011465091, y: 0.021049058, z: 0.00373409}
+      rotation: {x: 0, y: 0.020864699, z: -0, w: 0.9997823}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Root
+      parentName: knightwalkfinal(Clone)
+      position: {x: 0.00010820202, y: 0.037225857, z: -0.000028842125}
+      rotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_hip
+      parentName: Root
+      position: {x: 0.0009301354, y: -0.0042636683, z: -0.0033225103}
+      rotation: {x: -0.52038866, y: -0.43187356, z: 0.478057, w: 0.56048405}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_knee
+      parentName: R_hip
+      position: {x: -0.012660949, y: 0.00041157712, z: 0.000038424503}
+      rotation: {x: -0, y: -0.1610656, z: 0.000000029802322, w: 0.9869437}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: R_ankle
+      parentName: R_knee
+      position: {x: -0.015320243, y: 0.00003665652, z: 0.00053498417}
+      rotation: {x: 0.06463471, y: -0.39882615, z: -0.040093735, w: 0.9138669}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000002}
+    - name: R_foot
+      parentName: R_ankle
+      position: {x: -0.0074569373, y: 0.000032669745, z: 0.00022207848}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: L_hip
+      parentName: Root
+      position: {x: 0.000930135, y: -0.0042637046, z: 0.00332251}
+      rotation: {x: 0.43187293, y: -0.52038807, z: 0.56048465, w: -0.47805753}
+      scale: {x: 1.0000001, y: 1.0000005, z: 1.0000002}
+    - name: L_knee
+      parentName: L_hip
+      position: {x: 0.012660871, y: -0.00041157997, z: -0.00003843781}
+      rotation: {x: 0.000000029802322, y: 0.16106565, z: -0.00000008940697, w: -0.9869437}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000002}
+    - name: L_ankle
+      parentName: L_knee
+      position: {x: 0.015320284, y: -0.00003665, z: -0.0005349898}
+      rotation: {x: -0.06463262, y: 0.39882606, z: 0.040092416, w: -0.91386706}
+      scale: {x: 1.0000002, y: 1.0000004, z: 1}
+    - name: L_foot
+      parentName: L_ankle
+      position: {x: 0.0074569355, y: -0.00003267, z: -0.00022207676}
+      rotation: {x: 0.0000000037252907, y: 5.820767e-11, z: -0.0000000046566133, w: 1}
+      scale: {x: 1.0000002, y: 0.99999994, z: 1.0000002}
+    - name: Low_back
+      parentName: Root
+      position: {x: -0, y: 0.0047268723, z: -0.0000829254}
+      rotation: {x: -0.7071068, y: 0.7071068, z: 2.0030703e-16, w: -2.0030703e-16}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000005}
+    - name: Mid_back
+      parentName: Low_back
+      position: {x: -0.0090843765, y: -0.0004795855, z: 0.000000018296783}
+      rotation: {x: -0.0000000027939677, y: 0.008927508, z: 0.000000029802322, w: -0.9999602}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000004}
+    - name: neck
+      parentName: Mid_back
+      position: {x: -0.0075949784, y: 0.00016471324, z: 1.3790669e-17}
+      rotation: {x: -0.9999602, y: -0.000000029802322, z: 0.008927505, w: -0.0000000027939677}
+      scale: {x: 1, y: 1, z: 0.9999998}
+    - name: head
+      parentName: neck
+      position: {x: -0.0025764569, y: -0.00038332067, z: 1.474515e-19}
+      rotation: {x: -0, y: 6.6174433e-24, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 0.99999994}
+    - name: R_rotator
+      parentName: Mid_back
+      position: {x: -0.0046897167, y: 0.0004795855, z: 0.0035965545}
+      rotation: {x: 0.6143156, y: 0.000000016594102, z: -0.7890604, w: 0.000000054888567}
+      scale: {x: 0.9999997, y: 0.99999994, z: 0.9999998}
+    - name: R_shoulder
+      parentName: R_rotator
+      position: {x: -0.004319578, y: 0, z: 0.000075481104}
+      rotation: {x: 0.000000006483654, y: 0.110598765, z: -0.00000014676624, w: 0.99386513}
+      scale: {x: 1.0000005, y: 1, z: 1.0000005}
+    - name: R_elbow
+      parentName: R_shoulder
+      position: {x: -0.012922014, y: 0, z: -0.000022678156}
+      rotation: {x: 0.0000000027939713, y: -0.013694791, z: 4.551914e-15, w: 0.9999063}
+      scale: {x: 0.99999994, y: 1, z: 1}
+    - name: R_wrist
+      parentName: R_elbow
+      position: {x: -0.010847629, y: 0, z: -0.00008280633}
+      rotation: {x: 0.0000000058207625, y: 0.000000058673308, z: -2.8449457e-16, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1.0000002}
+    - name: L_rotator
+      parentName: Mid_back
+      position: {x: -0.004818059, y: 0.0004795855, z: -0.0035926832}
+      rotation: {x: 0.00000002070644, y: -0.62830585, z: -0.00000002161546, w: -0.77796644}
+      scale: {x: 1.0000001, y: 0.99999994, z: 1.0000001}
+    - name: L_shoulder
+      parentName: L_rotator
+      position: {x: 0.0043195686, y: 9.675247e-19, z: -0.00007555053}
+      rotation: {x: -0.00000009340576, y: 0.110598974, z: -0.000000074068936, w: 0.9938652}
+      scale: {x: 1.0000005, y: 1.0000005, z: 1.0000006}
+    - name: L_elbow
+      parentName: L_shoulder
+      position: {x: 0.012922025, y: -6.627906e-19, z: 0.000022683816}
+      rotation: {x: -0.0000000051222737, y: 0.013694791, z: -0.000000059604638, w: -0.9999063}
+      scale: {x: 1.0000004, y: 1.0000001, z: 1.0000005}
+    - name: L_wrist
+      parentName: L_elbow
+      position: {x: 0.010847599, y: -6.437397e-19, z: 0.0000828}
+      rotation: {x: -4.440891e-16, y: -0, z: 1.4571673e-16, w: 1}
+      scale: {x: 1.0000006, y: 1, z: 1.0000006}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -129,13 +349,13 @@ ModelImporter:
     globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
-  avatarSetup: 0
+  avatarSetup: 1
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
   importBlendShapeDeformPercent: 1
   remapMaterialsIfMaterialImportModeIsNone: 0

@@ -50,7 +50,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 499c50f7bc2e41a17893d814c7d50a70, type: 2}
+  m_Motion: {fileID: 7400000, guid: 5c83f612e65a010b59720f54ca61a1b3, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -276,7 +276,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: KnightWalking
+  m_Name: KnightWalk
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -291,7 +291,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: bf71617a4574c95f484a414d9d4067fe, type: 2}
+  m_Motion: {fileID: 7400000, guid: 9fd60051d1c1650c49a264c6b45e54b2, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

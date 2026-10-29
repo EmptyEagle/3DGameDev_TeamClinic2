@@ -9,21 +9,42 @@ public class Keybinds : MonoBehaviour
     [SerializeField] KeyCode keyLeft;
     [SerializeField] KeyCode keyRight;
     [SerializeField] KeyCode keyBlock;
+    [SerializeField] KeyCode keyRun;
+    //[SerializeField] KeyCode keyAttack;
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(keyForward) || Input.GetKeyDown(keyBack) || Input.GetKeyDown(keyLeft) || Input.GetKeyDown(keyRight))
+        // WALK
+        if (Input.GetKey(keyForward) || Input.GetKey(keyBack) || Input.GetKey(keyLeft) || Input.GetKey(keyRight))
         {
             animationTriggers.StartWalking();
         }
-        else if (Input.GetKeyUp(keyForward) || Input.GetKeyUp(keyBack) || Input.GetKeyUp(keyLeft) || Input.GetKeyUp(keyRight))
+        else if (!(Input.GetKey(keyForward) || Input.GetKey(keyBack) || Input.GetKey(keyLeft) || Input.GetKey(keyRight))) 
         {
             animationTriggers.StopWalking();
         }
+
+        // RUN
+        if (Input.GetKeyDown(keyRun))
+        {
+            animationTriggers.StartRunning();
+        }
+        else if (Input.GetKeyUp(keyRun))
+        {
+            animationTriggers.StopRunning();
+        }
+
+        // BLOCK
         if (Input.GetKeyDown(keyBlock))
         {
             animationTriggers.TriggerBlock();
+        }
+
+        // ATTACK
+        if (Input.GetMouseButtonDown(0))
+        {
+            animationTriggers.TriggerAttack();
         }
     }
 }

@@ -20,8 +20,23 @@ public class AnimationTriggers : MonoBehaviour
         animator.SetBool("BoolIsWalking", false);
     }
 
+    public void StartRunning()
+    {
+        animator.SetBool("BoolIsRunning", true);
+    }
+
+    public void StopRunning()
+    {
+        animator.SetBool("BoolIsRunning", false);
+    }
+
     public void TriggerBlock()
     {
         animator.SetTrigger("TrBlock");
+    }
+
+    public void TriggerAttack()
+    {
+        animator.SetTrigger("TrAttack");
     }
 }

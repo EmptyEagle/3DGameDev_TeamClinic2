@@ -267,13 +267,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.26794997, y: 0.33770302, z: -0.10091769, w: 0.8966467}
-  m_LocalPosition: {x: 0.34, y: 5.37, z: -1.88}
+  m_LocalRotation: {x: 0.21945848, y: -0.672189, z: 0.21945848, w: 0.672189}
+  m_LocalPosition: {x: 3.9900002, y: 5.64, z: -0.13}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 33.276, y: 41.276, z: 0}
+  m_Father: {fileID: 1026992505}
+  m_LocalEulerAnglesHint: {x: 36.162, y: -90, z: 0}
 --- !u!114 &330585547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -606,6 +606,52 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1026992504
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1026992505}
+  - component: {fileID: 1026992506}
+  m_Layer: 0
+  m_Name: CameraPivot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1026992505
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1026992504}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.09, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 330585546}
+  m_Father: {fileID: 1028361622}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1026992506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1026992504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76058c5fab2e4053b95a4bacfedd8520, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RotateCamera
+  sensitivity: 2
 --- !u!1 &1028361621
 GameObject:
   m_ObjectHideFlags: 0
@@ -636,6 +682,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1420601028}
+  - {fileID: 1026992505}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1092986541 stripped
@@ -701,7 +748,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!1001 &1450603994
 PrefabInstance:
@@ -771,6 +818,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: knightv1test
       objectReference: {fileID: 0}
+    - target: {fileID: 4418834999246775707, guid: e3730b5bc93dfa0b0925db9fca4c7c8c, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 2d376e9ddece6844d8a1c2e401730f8e, type: 2}
     - target: {fileID: 5866666021909216657, guid: e3730b5bc93dfa0b0925db9fca4c7c8c, type: 3}
       propertyPath: m_Controller
       value: 
@@ -781,7 +832,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: e3730b5bc93dfa0b0925db9fca4c7c8c, type: 3}
       propertyPath: m_WarningMessage
-      value: "\nBinding warning: Some generic clip(s) animate transforms that are already bound by a Humanoid avatar. These transforms can only be changed by Humanoid clips.\n\tTransform 'Root'\n\tTransform 'L_ankle'\n\tTransform 'R_hip'\n\tTransform 'R_ankle'\n\tTransform 'R_knee'\n\tTransform 'L_hip'\n\tTransform 'Mid_back'\n\tTransform 'L_knee'\n\tTransform 'Root'\n\tTransform 'Low_back'\n\tand more ...\n\tFrom animation clip 'KnightBlock'"
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: e3730b5bc93dfa0b0925db9fca4c7c8c, type: 3}
       propertyPath: m_ApplyRootMotion
@@ -845,6 +896,7 @@ MonoBehaviour:
   keyLeft: 97
   keyRight: 100
   keyBlock: 102
+  keyRun: 304
 --- !u!4 &1486583814
 Transform:
   m_ObjectHideFlags: 0
@@ -978,7 +1030,6 @@ BoxCollider:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 330585546}
   - {fileID: 410087041}
   - {fileID: 832575519}
   - {fileID: 570037075}
